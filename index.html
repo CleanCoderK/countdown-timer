@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Launch countdown timer</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    .main{
+      background: url("./images/bg-stars.svg"), url("./images/pattern-hills.svg");
+      background-repeat: no-repeat no-repeat;
+      background-size: auto, auto;
+      background-position: left 0vw top 0vh, left 0vw bottom 0vh;
+      z-index: -1;
+    }
+    @media screen and (max-width:720px){
+      .main{
+        background-position: left -50vw top 10vh, left -50vw bottom 0vh;
+        z-index: -1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <h1>
+        We're launching soon
+      </h1>
+
+      <div class="count-down">
+        <div class="days" id="form-days">
+          <div class="form">
+            <div class="numbers" id="days">15</div>
+            <div class="upper"></div>
+            <div class="middle"></div>
+            <div class="lower"></div>
+          </div>
+          <p>
+            Days
+          </p>
+        </div>
+        <div class="hours">
+          <div class="form" id="form-hours">
+            <div class="numbers" id="hours">00</div>
+            <div class="upper"></div>
+            <div class="middle"></div>
+            <div class="lower"></div>
+          </div>
+          <p>
+            Hours
+          </p>
+        </div>
+        <div class="minutes">
+          <div class="form" id="form-minutes">
+            <div class="numbers" id="minutes">00</div>
+            <div class="upper"></div>
+            <div class="middle"></div>
+            <div class="lower"></div>
+          </div>
+          <p>
+            Minutes
+          </p>
+        </div>
+        <div class="seconds">
+          <div class="form" id="form-seconds">
+            <div class="numbers" id="seconds">00</div>
+            <div class="upper"></div>
+            <div class="middle"></div>
+            <div class="lower"></div>
+          </div>
+          <p>
+            Seconds
+          </p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <img src="./images/icon-facebook.svg" alt="facebook" class="icon">
+        <img src="./images/icon-instagram.svg" alt="facebook" class="icon">
+        <img src="./images/icon-pinterest.svg" alt="facebook" class="icon">
+      </div>
+    </div>
+
+
+  </main>
+
+  <script src="./app.js"></script>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
